@@ -1,0 +1,25 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "connectionTimeout": 30,
+            "database": "simcore_dev",
+            "dialect": "MySQL",
+            "name": "Healthscholars local",
+            "password": "secret",
+            "port": 3306,
+            "server": "192.168.10.10",
+            "username": "homestead"
+        },
+        {
+            "connectionTimeout": 30,
+            "database": "todo",
+            "dialect": "MySQL",
+            "name": "local todo",
+            "password": "secret",
+            "port": 3306,
+            "server": "local.todo",
+            "username": "homestead"
+        }
+    ]
+}
