@@ -11,6 +11,7 @@
     <div id="app">
         <top-nav></top-nav>
         @yield('body')
+        <app-footer></app-footer>
     </div>
     <script src="/js/app.js"></script>
 </body>
