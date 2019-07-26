@@ -1,11 +1,4 @@
-describe('Landing Page', () => {
-    it('should render properly', () => {
-        cy
-            .visit('/')
-            .get('h1[data-testid="top-nav-title"]')
-            .contains("Todo's")
-    })
-
+describe('Footer', () => {
     it('should have current copyright date', () => {
         const now = new Date()
 
