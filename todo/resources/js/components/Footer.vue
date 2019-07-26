@@ -1,7 +1,7 @@
 <template>
     <section>
-        <div>© 2019</div>
-        <div>Brooks Patton</div>
+        <div data-testid="copyright">© 2019</div>
+        <div data-testid="company-name">Brooks Patton</div>
     </section>
 </template>
 

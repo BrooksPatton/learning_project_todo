@@ -6286,7 +6286,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "section[data-v-15bf0008] {\n  background-color: black;\n  background-image: url(\"/landing-hero.jpg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 75vh;\n  width: 96vw;\n  margin: 2.4rem 2.4rem 0;\n}", ""]);
+exports.push([module.i, "section[data-v-15bf0008] {\n  background-color: black;\n  background-image: url(\"/landing-hero.jpg\");\n  background-repeat: no-repeat;\n  background-size: 100%;\n  height: 75vh;\n  margin: 2.4rem 2.4rem 0;\n}", ""]);
 
 // exports
 
@@ -37874,9 +37874,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", [
-      _c("div", [_vm._v("© 2019")]),
+      _c("div", { attrs: { "data-testid": "copyright" } }, [_vm._v("© 2019")]),
       _vm._v(" "),
-      _c("div", [_vm._v("Brooks Patton")])
+      _c("div", { attrs: { "data-testid": "company-name" } }, [
+        _vm._v("Brooks Patton")
+      ])
     ])
   }
 ]
@@ -37932,7 +37934,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [_c("h1", [_vm._v("Todo's")])])
+    return _c("section", [
+      _c("h1", { attrs: { "data-testid": "top-nav-title" } }, [
+        _vm._v("Todo's")
+      ])
+    ])
   }
 ]
 render._withStripped = true

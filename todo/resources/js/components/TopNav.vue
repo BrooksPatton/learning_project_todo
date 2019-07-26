@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h1>Todo's</h1>
+        <h1 data-testid="top-nav-title">Todo's</h1>
     </section>
 </template>
 
