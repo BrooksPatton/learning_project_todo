@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Http\Requests\CreateAccount;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class Accounts extends Controller
 {
@@ -13,8 +12,11 @@ class Accounts extends Controller
     }
 
     public function store(CreateAccount $request) {
-        User::create($request->validated());
+        $user = $request->validated();
 
+        User::create($user);
+
+        Auth::attempt($user, true);
         return redirect('/');
     }
 }

@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,6 @@
 */
 
 Route::get('/', function () {
+    dd(Auth::check());
     return view('landing');
 });
-
-Route::resource('/accounts', 'Accounts');
