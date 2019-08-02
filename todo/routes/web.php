@@ -1,6 +1,4 @@
 <?php
-use Illuminate\Support\Facades\Auth;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,3 +13,4 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', 'LandingController@index');
 Route::get('/accounts', 'AccountsController@index');
 Route::post('/accounts', 'Auth\RegisterController@register');
+Route::get('/dashboard', 'DashboardController@index');

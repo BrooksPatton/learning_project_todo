@@ -38256,7 +38256,15 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [_c("h1", [_vm._v("Dashboard")])])
+    return _c("section", [
+      _c("section", { staticClass: "my-lists" }, [
+        _c("h1", [_vm._v("My Todo Lists")])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "group-lists" }, [
+        _c("h1", [_vm._v("Group Todo Lists")])
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -50523,7 +50531,7 @@ Vue.component('top-nav', __webpack_require__(/*! ./components/TopNav.vue */ "./r
 Vue.component('landing', __webpack_require__(/*! ./components/Landing.vue */ "./resources/js/components/Landing.vue")["default"]);
 Vue.component('app-footer', __webpack_require__(/*! ./components/Footer.vue */ "./resources/js/components/Footer.vue")["default"]);
 Vue.component('create-account', __webpack_require__(/*! ./components/CreateAccount.vue */ "./resources/js/components/CreateAccount.vue")["default"]);
-Vue.component('dashboard', __webpack_require__(/*! ./components/DashboardComponent */ "./resources/js/components/DashboardComponent.vue"));
+Vue.component('dashboard', __webpack_require__(/*! ./components/DashboardComponent */ "./resources/js/components/DashboardComponent.vue")["default"]);
 var app = new Vue({
   el: '#app'
 });

@@ -19,7 +19,7 @@ This is a scrimmage project for checking understanding of building full-stack ap
 
 * [x] As a doer without an account, I want to see a landing page when I first navigate to the app
 * [x] As a doer without an account, I want to create an account with a username and password
-* [ ] As a logged in doer, I want to see the dashboard when I navigate to the app
+* [x] As a logged in doer, I want to see the dashboard when I navigate to the app
 * [ ] As a logged out doer, I want to be able to log in
 * [ ] As a logged in dore, I want to be able to log out
 * [ ] As a logged in doer, I want to be able to change my password
