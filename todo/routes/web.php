@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    dd(Auth::check());
-    return view('landing');
-});
+Route::get('/', 'LandingController@index');
+Route::get('/accounts', 'AccountsController@index');
+Route::post('/accounts', 'Auth\RegisterController@register');
