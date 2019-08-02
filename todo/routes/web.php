@@ -1,4 +1,5 @@
 <?php
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +13,6 @@
 
 Route::get('/', 'LandingController@index');
 Route::get('/accounts', 'AccountsController@index');
+Route::get('/accounts/login', 'AccountsController@login');
 Route::post('/accounts', 'Auth\RegisterController@register');
 Route::get('/dashboard', 'DashboardController@index');

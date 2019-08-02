@@ -10,4 +10,8 @@ class AccountsController extends Controller
     public function index() {
         return view('create-account');
     }
+
+    public function login() {
+        return view('login');
+    }
 }

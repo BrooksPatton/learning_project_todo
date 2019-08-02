@@ -8,6 +8,9 @@
                 <li>
                     <a href="/accounts" data-testid="create-account">create account</a>
                 </li>
+                <li>
+                    <a href="/accounts/login" data-testid="login">login</a>
+                </li>
             </ul>
         </nav>
     </section>
@@ -28,7 +31,12 @@
         color: lightcyan;
     }
 
+    ul {
+        display: flex;
+    }
+
     li {
         list-style: none;
+        margin-left: 2rem;
     }
 </style>

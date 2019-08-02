@@ -1,24 +1,10 @@
 <template>
     <section>
         <h1>Create new account</h1>
-        <div>
-            <a href="/">back</a>
-        </div>
+        <button-link to="/" label="back"></button-link>
         <form action="/accounts" method="post">
-            <div>
-                <p><span class="required">*</span> - required fields</p>
-            </div>
-            <div>
-                <label for="email">email <span class="required">*</span></label>
-            </div>
-            <div data-testid="email" v-if="serverErrors.email && serverErrors.email.length > 0">
-                <p class="error" v-for="message in serverErrors.email">
-                    {{message}}
-                </p>
-            </div>
-            <div>
-                <input type="email" name="email" id="email" validate required>
-            </div>
+            <form-required-text></form-required-text>
+            <email-form-field name="email" label="email" required=true :errors="serverErrors.email"></email-form-field>
             <div>
                 <label for="username">name <span class="required">*</span></label>
             </div>
@@ -100,13 +86,6 @@ export default {
 
     .required {
         color: red;
-    }
-
-    a {
-        text-decoration: none;
-        background-color: lightseagreen;
-        padding: 0.5rem;
-        border-radius: 5px;
     }
 
     label {
