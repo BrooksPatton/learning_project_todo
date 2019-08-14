@@ -4,7 +4,8 @@
         <button-link to="/" label="back"></button-link>
         <form action="/accounts/login" method="POST">
             <form-required-text></form-required-text>
-            <email-form-field label="email" name="email" required=true :errors="errors"></email-form-field>
+            <email-form-field label="email" name="email" required=true :errors="errors.email"></email-form-field>
+            <password-form-field label="password" name="password" required=true :errors="errors.password"></password-form-field>
         </form>
     </section>
 </template>
@@ -13,8 +14,11 @@
 export default {
     data() {
         return {
-            errors: ['one', 'two', 'three']
-        }
+            errors: {
+                email: [],
+                password: []
+            }
+        };
     }
 }
 </script>

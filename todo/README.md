@@ -13,7 +13,7 @@ This is a scrimmage project for checking understanding of building full-stack ap
 ## Drills
 
 <!-- Example Drill -->
-<!-- * [ ] Using bcrypt to hash passwords before storing them in the database -->
+* [ ] Creating shared form components
 
 ## User Stories
 

@@ -11,6 +11,7 @@ Vue.component('login', require('./components/LoginComponent').default);
 Vue.component('button-link', require('./components/ButtonLinkComponent').default);
 Vue.component('form-required-text', require('./components/FormRequiredText').default);
 Vue.component('email-form-field', require('./components/EmailFormField').default);
+Vue.component('password-form-field', require('./components/PasswordFormField').default);
 
 const app = new Vue({
     el: '#app',
