@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="app">
-        <top-nav></top-nav>
+        <top-nav user="{{Auth::user()}}"></top-nav>
         <main>
             @yield('body')
         </main>

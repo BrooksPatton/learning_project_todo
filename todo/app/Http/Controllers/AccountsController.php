@@ -14,4 +14,10 @@ class AccountsController extends Controller
     public function login() {
         return view('login');
     }
+
+    public function logout() {
+        Auth::logout();
+
+        return redirect('/');
+    }
 }

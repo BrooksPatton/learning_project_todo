@@ -4,7 +4,12 @@
             <a href="/">Todo's</a>
         </h1>
         <nav>
-            <ul>
+            <ul v-if="loggedIn">
+                <li>
+                    <a href="/accounts/logout">Logout</a>
+                </li>
+            </ul>
+            <ul v-else>
                 <li>
                     <a href="/accounts" data-testid="create-account">create account</a>
                 </li>
@@ -15,6 +20,18 @@
         </nav>
     </section>
 </template>
+
+<script>
+export default {
+    props: ['user'],
+    data() {
+        return {
+            loggedIn: this.user ? true : false,
+            currentUser: JSON.parse(this.user)
+        }
+    }
+}
+</script>
 
 <style scoped>
     section {
