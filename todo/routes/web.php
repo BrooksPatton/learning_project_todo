@@ -16,5 +16,6 @@ Route::get('/', 'LandingController@index');
 Route::get('/accounts', 'AccountsController@index');
 Route::get('/accounts/login', 'AccountsController@login');
 Route::post('/accounts', 'Auth\RegisterController@register');
-Route::get('/accounts/logout', 'AccountsController@logout');
+Route::get('/accounts/logout', 'Auth\LoginController@logout');
 Route::get('/dashboard', 'DashboardController@index');
+Route::post('/accounts/login', 'Auth\LoginController@login');

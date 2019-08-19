@@ -6,7 +6,7 @@
         <nav>
             <ul v-if="loggedIn">
                 <li>
-                    <a href="/accounts/logout">Logout</a>
+                    <a href="/accounts/logout" data-testid="logout">Logout</a>
                 </li>
             </ul>
             <ul v-else>

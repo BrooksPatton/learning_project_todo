@@ -12,6 +12,8 @@ Vue.component('button-link', require('./components/ButtonLinkComponent').default
 Vue.component('form-required-text', require('./components/FormRequiredText').default);
 Vue.component('email-form-field', require('./components/EmailFormField').default);
 Vue.component('password-form-field', require('./components/PasswordFormField').default);
+Vue.component('button-form', require('./components/ButtonForm').default);
+Vue.component('form-csrf-token', require('./components/FormCSRFToken').default);
 
 const app = new Vue({
     el: '#app',

@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('body')
-    <login></login>
+    <login csrftoken="{{csrf_token()}}"></login>
 @endsection

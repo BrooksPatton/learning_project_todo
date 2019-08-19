@@ -6,12 +6,15 @@
             <form-required-text></form-required-text>
             <email-form-field label="email" name="email" required=true :errors="errors.email"></email-form-field>
             <password-form-field label="password" name="password" required=true :errors="errors.password"></password-form-field>
+            <form-csrf-token v-bind:csrftoken="csrftoken"></form-csrf-token>
+            <button-form name="Login" :csrftoken="csrftoken"></button-form>
         </form>
     </section>
 </template>
 
 <script>
 export default {
+    props: ['csrftoken'],
     data() {
         return {
             errors: {

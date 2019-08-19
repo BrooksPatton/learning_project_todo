@@ -38,12 +38,8 @@
             <div>
                 <input type="password" name="password_confirmation" id="password-confirmation" validate required>
             </div>
-            <div>
-                <input type="hidden" name="_token" v-bind:value="csrftoken">
-            </div>
-            <div>
-                <button>create account</button>
-            </div>
+            <form-csrf-token v-bind:csrftoken="csrftoken"></form-csrf-token>
+            <button-form name="Create Account"></button-form>
         </form>
     </section>
 </template>
@@ -75,13 +71,6 @@ export default {
         height: 2rem;
         border: none;
         border-bottom: 1px solid black;
-    }
-
-    button {
-        padding: 1rem;
-        background-color: lightseagreen;
-        border-radius: 5px;
-        border: none;
     }
 
     .required {
