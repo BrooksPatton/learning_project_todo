@@ -6,6 +6,12 @@
         <nav>
             <ul v-if="loggedIn">
                 <li>
+                    Logged in as {{currentUser.username}}
+                </li>
+                <li>
+                    <a href="/accounts/settings">Settings</a>
+                </li>
+                <li>
                     <a href="/accounts/logout" data-testid="logout">Logout</a>
                 </li>
             </ul>
